@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.butte.flyer.gateway.mapper.ConfigRouteMapper" >
+
+  <resultMap id="BaseResultMap" type="com.butte.flyer.gateway.entity.ConfigRoute" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="route_id" property="routeId" jdbcType="VARCHAR" />
+    <result column="uri" property="uri" jdbcType="VARCHAR" />
+    <result column="orders" property="orders" jdbcType="INTEGER" />
+    <result column="metadata" property="metadata" jdbcType="VARCHAR" />
+    <result column="state" property="state" jdbcType="INTEGER" />
+    <result column="create_time" property="createTime" jdbcType="TIMESTAMP" />
+    <result column="update_time" property="updateTime" jdbcType="TIMESTAMP" />
+    <result column="predicates" property="predicates" jdbcType="LONGVARCHAR" />
+    <result column="filters" property="filters" jdbcType="LONGVARCHAR" />
+  </resultMap>
+
+  <sql id="Base_Column_List" >
+    id, route_id, uri, orders, metadata, state, create_time, update_time
+  </sql>
+
+</mapper>
