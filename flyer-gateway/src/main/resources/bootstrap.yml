@@ -1,0 +1,19 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8010
+spring:
+  application:
+    name: gateway
+  profiles:
+    active: dev,gateway
+  cloud:
+    nacos:
+      config:
+        prefix: application
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+        namespace: af8d549a-296e-4539-962f-d09e480185f5
+        refresh-enabled: true
+      discovery:
+        server-addr: 127.0.0.1:8848
