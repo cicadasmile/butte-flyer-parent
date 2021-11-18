@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>flyer-facade</artifactId>
+        <groupId>com.butte.flyer.facade</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.butte.flyer.facade.feign</groupId>
+    <artifactId>facade-feign</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- Feign组件依赖 -->
+        <dependency>
+            <groupId>com.butte.feign</groupId>
+            <artifactId>frame-feign</artifactId>
+            <version>${butte.version}</version>
+        </dependency>
+        <!-- Facade.beans依赖 -->
+        <dependency>
+            <groupId>com.butte.flyer.facade.beans</groupId>
+            <artifactId>facade-beans</artifactId>
+            <version>${dev.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
