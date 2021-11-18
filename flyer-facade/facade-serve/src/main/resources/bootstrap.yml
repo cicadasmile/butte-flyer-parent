@@ -1,0 +1,22 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8082
+spring:
+  application:
+    name: facade
+  main:
+    ## 支持覆盖注册
+    allow-bean-definition-overriding: true
+  profiles:
+    active: dev,facade
+  cloud:
+    nacos:
+      config:
+        prefix: application
+        server-addr: 127.0.0.1:8848
+        file-extension: yml
+        namespace: 57db44eb-0c6a-46a8-bf5d-ff889c684594
+        refresh-enabled: true
+      discovery:
+        server-addr: 127.0.0.1:8848
