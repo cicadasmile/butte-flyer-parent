@@ -47,7 +47,7 @@ public class FacadeInterceptor extends HandlerInterceptorAdapter {
         String[] uriArr = authWhiteService.getByType(AuthType.API_AUTH.getType()) ;
         String uri = request.getRequestURI();
         for (String uriWhite:uriArr){
-            if (ReUtil.contains(uriWhite,uri)){
+            if (StrUtil.contains(uri,uriWhite)){
                 return Boolean.TRUE ;
             }
         }
