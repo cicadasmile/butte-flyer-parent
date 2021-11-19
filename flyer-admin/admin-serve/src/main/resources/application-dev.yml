@@ -1,0 +1,30 @@
+spring:
+  datasource:
+    type: com.zaxxer.hikari.HikariDataSource
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/butte-admin?${spring.datasource.db-param}
+    username: root
+    password: 123456
+    db-param: useUnicode=true&characterEncoding=UTF8&zeroDateTimeBehavior=convertToNull&useSSL=false
+    hikari:
+      minimumIdle: 5
+      maximumPoolSize: 10
+      idleTimeout: 300000
+      maxLifetime: 500000
+      connectionTimeout: 30000
+  redis:
+    host: 192.168.37.134
+    port: 6379
+    database: 3
+  kafka:
+    bootstrap-servers: 192.168.37.136:9092
+    listener:
+      missing-topics-fatal: false
+      ack-mode: manual_immediate
+    consumer:
+      group-id: ${spring.application.name}-group
+      enable-auto-commit: false
+      max-poll-records: 50
+  elasticsearch:
+    rest:
+      uris: 192.168.37.136:9200
