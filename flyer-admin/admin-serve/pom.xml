@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <parent>
+        <artifactId>flyer-admin</artifactId>
+        <groupId>com.butte.flyer.admin</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.butte.flyer.admin.serve</groupId>
+    <artifactId>admin-serve</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+
+        <!-- Admin.feign依赖 -->
+        <dependency>
+            <groupId>com.butte.flyer.admin.feign</groupId>
+            <artifactId>admin-feign</artifactId>
+            <version>${dev.version}</version>
+        </dependency>
+
+        <!-- 基础组件依赖 -->
+        <dependency>
+            <groupId>com.butte.core</groupId>
+            <artifactId>frame-core</artifactId>
+            <version>${butte.version}</version>
+        </dependency>
+
+        <!-- Jdbc组件依赖 -->
+        <dependency>
+            <groupId>com.butte.jdbc</groupId>
+            <artifactId>frame-jdbc</artifactId>
+            <version>${butte.version}</version>
+        </dependency>
+
+        <!-- Security组件依赖 -->
+        <dependency>
+            <groupId>com.butte.security</groupId>
+            <artifactId>frame-security</artifactId>
+            <version>${butte.version}</version>
+        </dependency>
+
+        <!-- Redis组件依赖 -->
+        <dependency>
+            <groupId>com.butte.redis</groupId>
+            <artifactId>frame-redis</artifactId>
+            <version>${butte.version}</version>
+        </dependency>
+
+        <!-- ElasticSearch搜索引擎 -->
+        <dependency>
+            <groupId>com.butte.search</groupId>
+            <artifactId>frame-search</artifactId>
+            <version>${butte.version}</version>
+        </dependency>
+
+        <!-- Kafka组件依赖 -->
+        <dependency>
+            <groupId>com.butte.kafka</groupId>
+            <artifactId>frame-kafka</artifactId>
+            <version>${butte.version}</version>
+        </dependency>
+
+    </dependencies>
+
+</project>
