@@ -1,0 +1,12 @@
+server:
+  tomcat:
+    uri-encoding: UTF-8
+  port: 8083
+spring:
+  application:
+    name: admin
+  main:
+    ## 支持覆盖注册
+    allow-bean-definition-overriding: true
+  profiles:
+    active: dev
