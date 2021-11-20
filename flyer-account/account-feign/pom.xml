@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>flyer-account</artifactId>
+        <groupId>com.butte.flyer.account</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+
+    <modelVersion>4.0.0</modelVersion>
+    <groupId>com.butte.flyer.account.feign</groupId>
+    <artifactId>account-feign</artifactId>
+    <packaging>jar</packaging>
+
+    <dependencies>
+        <!-- Feign组件依赖 -->
+        <dependency>
+            <groupId>com.butte.feign</groupId>
+            <artifactId>frame-feign</artifactId>
+            <version>${butte.version}</version>
+        </dependency>
+        <!-- Account.beans依赖 -->
+        <dependency>
+            <groupId>com.butte.flyer.account.beans</groupId>
+            <artifactId>account-beans</artifactId>
+            <version>${dev.version}</version>
+        </dependency>
+    </dependencies>
+
+</project>
