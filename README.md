@@ -13,7 +13,7 @@ Java分布式系统中，微服务基础组件（Nacos、Feign、Gateway、Seata
 
 ![](https://images.gitee.com/uploads/images/2021/1114/231023_53b4ecc2_5064118.png "01-1.png")
 
-服务总览
+服务总览，相关 ![脚本文件](https://gitee.com/cicadasmile/butte-java-note/tree/master/浅封装模块/sql-script) 
 
 | 服务名 | 分层 | 端口 | 缓存库 | 数据库 | 描述 |
 |:---|:---|:---|:---|:---|:---|
