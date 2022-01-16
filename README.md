@@ -7,13 +7,17 @@ Java分布式系统中，微服务基础组件（Nacos、Feign、Gateway、Seata
 - **[butte-flyer](https://gitee.com/cicadasmile/butte-flyer-parent)** 组件封装的应用案例；
 - **[butte-frame](https://gitee.com/cicadasmile/butte-frame-parent)** 常用技术组件二次封装；
 
-## 2、分层架构
+## 2、参考文章
+
+- [微服务架构中，二次浅封装实践](https://mp.weixin.qq.com/s/yApUyG1xH8Geg8oR1NM1IQ)
+
+## 3、分层架构
 
 整体划分五分分层：网关层、应用层、业务层、中间件层、基础层，组合成整体的分布式系统。
 
 ![](https://images.gitee.com/uploads/images/2021/1114/231023_53b4ecc2_5064118.png "01-1.png")
 
-服务总览 , 相关[脚本文件](https://gitee.com/cicadasmile/butte-java-note/tree/master/浅封装模块/sql-script) , [微服务环境配置](https://gitee.com/cicadasmile/butte-frame-parent/wikis/微服务环境)；
+服务总览 , 相关[脚本文件](https://gitee.com/cicadasmile/butte-flyer-parent/tree/master/flyer-script) , [微服务环境配置](https://gitee.com/cicadasmile/butte-frame-parent/wikis/微服务环境)；
 
 | 服务名 | 分层 | 端口 | 缓存库 | 数据库 | 描述 |
 |:---|:---|:---|:---|:---|:---|
@@ -30,7 +34,7 @@ Java分布式系统中，微服务基础组件（Nacos、Feign、Gateway、Seata
 | seata         | 基础层 | 8091 | --- | seata   | 分布事务 |
 | mysql         | 基础层 | 3306 | --- | ------  | 数据存储 |
 
-## 3、目录结构
+## 4、目录结构
 
 在`butte-frame`中对各个技术栈进行二次封装管理，在`butte-flyer`中进行依赖引用。
 
@@ -59,7 +63,7 @@ butte-flyer
 └── flyer-admin         管理服务：后端管理
 ```
 
-## 4、技术栈组件
+## 5、技术栈组件
 
 系统常用的技术栈：基础框架、微服务组件、缓存、安全管理、数据库、定时任务、工具依赖等。
 
@@ -85,7 +89,7 @@ butte-flyer
 | apache-common    | 2.7.0           |  基础依赖包             |
 | hutool           | 5.3.1           |  基础工具包             |
 
-## 5、关于作者
+## 6、关于作者
 
 | 有问题加：微信号↓ | 支持关注：公众号↓ |
 |----|-----|
